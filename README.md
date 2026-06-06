@@ -13,7 +13,7 @@ L'or est une matière première stratégique dont le cours est influencé par de
 ## Structure du dépôt
 ├── Projet_ML.ipynb        # Notebook principal
 ├── gld_price_data.csv     # Dataset utilisé
----
+
 ## Prérequis
 
 Python 3.8+ et les bibliothèques suivantes :
@@ -22,7 +22,7 @@ Python 3.8+ et les bibliothèques suivantes :
 pip install pandas numpy matplotlib seaborn scikit-learn
 ```
 
----
+
 
 ## Comment exécuter le projet
 
@@ -56,9 +56,11 @@ jupyter notebook Projet_ML.ipynb
 
 ## Résultats
 
-=== Régression Linéaire === MAE : 0.67 → erreur moyenne en dollars RMSE : 0.90 → pénalise les grosses erreurs R² : 0.9657 → 1.0 = parfait, 0 = inutile, <0 = mauvais 
-=== Random Forest === MAE : 1.13 → erreur moyenne en dollars RMSE : 1.43 → pénalise les grosses erreurs R² : 0.9130 → 1.0 = parfait, 0 = inutile, <0 = mauvais 
-=== Gradient Boosting === MAE : 1.26 → erreur moyenne en dollars RMSE : 1.60 → pénalise les grosses erreurs R² : 0.8904 → 1.0 = parfait, 0 = inutile, <0 = mauvais
+| Modèle | MAE ($) | RMSE ($) | R² |
+|--------|---------|----------|----|
+| **Régression Linéaire** | **0.67** | **0.90** | **0.9657** |
+| Random Forest | 1.13 | 1.43 | 0.9130 |
+| Gradient Boosting | 1.26 | 1.60 | 0.8904 |
 
 -> La régression linéaire obtient les meilleures performances sur les trois métriques, avec une erreur moyenne inférieure à 1 dollar et un R² de 96.6 %.
 
